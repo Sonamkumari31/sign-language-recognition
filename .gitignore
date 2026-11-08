@@ -1,25 +1,48 @@
 
+# Python
 __pycache__/
 *.py[cod]
 .venv/
 .env
 .ipynb_checkpoints/
 
-# Dataset videos and generated preprocessing files
+# Local datasets and dataset-derived artifacts
+data/
 dataset/
 datasets/
-data/
+ASL_Citizen/
+ASL_Citizen_download/
+
+# Dataset videos
 *.mp4
 *.avi
+*.mov
+*.mkv
+
+# Generated arrays and archives
 *.npy
 *.npz
+*.zip
+*.tar
+*.gz
 
-# Model checkpoints
+# Local dataset manifests and annotation files
+class_list.txt
+global_label_map.json
+
+# Model checkpoints and weights
 *.pth
 *.pt
 *.ckpt
+*.safetensors
 
 # Training logs and outputs
 runs/
 logs/
 wandb/
+tensorboard/
+
+# Local environment and editor files
+.env.*
+.vscode/
+.idea/

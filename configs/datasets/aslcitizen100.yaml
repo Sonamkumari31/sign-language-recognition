@@ -1,0 +1,27 @@
+dataset:
+  name: aslcitizen
+  num_classes: 100
+  splits:
+    train: train
+    validation: val
+    test: test
+  manifest_root: data/manifests/aslcitizen100
+  frame_root: data/frames/aslcitizen100
+  lti_root: data/lti_images/aslcitizen100
+
+input:
+  num_frames: 16
+  image_size: 224
+  frame_channels: 3
+  lti_channels: 3
+
+normalization:
+  appearance: imagenet
+  lti: preserve_preprocessed_coordinates
+
+dataloader:
+  batch_size: 2
+  num_workers: 0
+  pin_memory: true
+  shuffle_train: true
+  drop_last_train: false

@@ -1,0 +1,17 @@
+﻿{
+    "dataset":  "ASL Citizen100",
+    "split":  "test",
+    "modality":  "paired",
+    "num_classes":  100,
+    "evaluated_samples":  1283,
+    "batch_size":  1,
+    "device":  "cuda",
+    "checkpoint_epochs":  {
+                              "appearance":  8,
+                              "pose":  23,
+                              "fusion":  3
+                          },
+    "comparison_protocol":  "All three models evaluated on the same paired held-out test samples.",
+    "training_performed":  false,
+    "checkpoint_modification":  false
+}
